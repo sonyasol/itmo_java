@@ -1,106 +1,75 @@
 package org.itmo.lab2;
 
 public class Calculator {
-    private Integer a;
-    private Integer b;
-
-    private Double double_a;
-    private Double double_b;
-
-    private Long long_a;
-    private Long long_b;
-
-    public Double Sum(Integer a, Integer b)
-    {
+    public Double sum(Integer firstNumber, Integer secondNumber) {
         double sum;
-        this.a = a;
-        this.b = b;
-
-        sum = (double)a + b;
+        sum = (double)firstNumber + secondNumber;
         return sum;
     }
 
-    public Double Sum(Double double_a, Double double_b)
-    {
+    public Double sum(Double firstNumber, Double secondNumber) {
         double sum;
-        this.double_a = double_a;
-        this.double_b = double_b;
-
-        sum = double_a + double_b;
+        sum = firstNumber + secondNumber;
         return sum;
     }
 
-    public Double Sum(Long long_a, Long long_b)
-    {
+    public Double sum(Long firstNumber, Long secondNumber) {
         double sum;
-        this.long_a = long_a;
-        this.long_b = long_b;
-
-        sum = (double)long_a + long_b;
+        sum = (double)firstNumber + secondNumber;
         return sum;
     }
 
-    public Double Divide(Integer a, Integer b)
-    {
+    public Double divide(Integer firstNumber, Integer secondNumber) {
         double divide;
-        divide = (double)a/b;
+        divide = (double)firstNumber/secondNumber;
         return divide;
     }
 
-    public Double Divide(Double double_a, Double double_b)
-    {
+    public Double divide(Double firstNumber, Double secondNumber) {
         double divide;
-        divide = double_a/double_b;
+        divide = firstNumber/secondNumber;
         return  divide;
     }
 
-    public Double Divide(Long long_a, Long long_b)
-    {
+    public Double divide(Long firstNumber, Long secondNumber) {
         double divide;
-        divide = (double)long_a/long_b;
+        divide = (double)firstNumber/secondNumber;
         return divide;
     }
 
-    public Double Multiply(Integer a, Integer b)
-    {
+    public Double multiply(Integer firstNumber, Integer secondNumber) {
         double multiply;
-
-        multiply = a * b;
+        multiply = firstNumber * secondNumber;
         return multiply;
     }
 
-    public Double Multiply(Double double_a, Double double_b)
-    {
+    public Double multiply(Double firstNumber, Double secondNumber) {
         double multiply;
-        multiply = double_a * double_b;
+        multiply = firstNumber * secondNumber;
         return multiply;
     }
 
-    public Double Multiply(Long long_a, Long long_b)
-    {
+    public Double multiply(Long firstNumber, Long secondNumber) {
         double multiply;
-        multiply = (double)long_a * long_b;
+        multiply = (double)firstNumber * secondNumber;
         return  multiply;
     }
 
-    public Double Subtract(Integer a, Integer b)
-    {
+    public Double subtract(Integer firstNumber, Integer secondNumber) {
         double subtract;
-        subtract = (double)a - b;
+        subtract = (double)firstNumber - secondNumber;
         return subtract;
     }
 
-    public Double Subtract(Double double_a, Double double_b)
-    {
+    public Double subtract(Double firstNumber, Double secondNumber) {
         double subtract;
-        subtract = double_a - double_b;
+        subtract = firstNumber - secondNumber;
         return subtract;
     }
 
-    public Double Subtract(Long long_a, Long long_b)
-    {
+    public Double subtract(Long firstNumber, Long secondNumber) {
         double subtract;
-        subtract = (double)long_a - long_b;
+        subtract = (double)firstNumber - secondNumber;
         return subtract;
     }
 }
