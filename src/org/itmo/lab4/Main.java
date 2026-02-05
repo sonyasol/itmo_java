@@ -11,16 +11,16 @@ public class Main {
         //printOddNumbers();
         //secondTask();
         //thirdTask();
-        //fourthTask();
-        //fifthTask(5,6,9,10,5, 3);
+        //fourthTask(5, 20, 15);
+        fifthTask(5,6,9,10,5,3);
         //sixthTask();
 
         //sortedArray(1,2,2,3,4,5);
         //userArray();
         //changeArray(5,6,7,2);
         //uniqueNumber(1,2,3,1,2,4);
-        int [] result = mergeSort(5,9,2,3,7,1,500);
-        System.out.println(Arrays.toString(result));
+        //int [] result = mergeSort(5,9,2,3,7,1,500);
+        //System.out.println(Arrays.toString(result));
     }
 
     public static void printOddNumbers() {
@@ -62,36 +62,27 @@ public class Main {
         }
     }
 
-    public static void fourthTask() {
-        Scanner scanner = new Scanner(System.in);
+    public static void fourthTask(int a, int b, int c) {
         Boolean isTrue;
-
-        System.out.print("Введите первое число: ");
-        int a = scanner.nextInt();
-
-        System.out.print("Введите второе число: ");
-        int b = scanner.nextInt();
-
-        System.out.print("Введите третье число: ");
-        int c = scanner.nextInt();
 
         if (b > a) {
             if (c > b) {
                 isTrue = true;
                 System.out.print("Результат: " + isTrue);
+            } else {
+                isTrue = false;
+                System.out.print("Результат: " + isTrue);
             }
         }
     }
 
-    public static void fifthTask(int... array) {
-        Boolean isTrue;
+    public static boolean fifthTask(int... array) {
         if (array.length >= 2) {
             if (array[0] == 3 || array[array.length - 1] == 3) {
-                isTrue = true;
-                System.out.println("array = " + Arrays.toString(array));
-                System.out.println(isTrue);
+                return true;
             }
         }
+        return  false;
     }
 
     public static boolean sixthTask(int... numbers) {
